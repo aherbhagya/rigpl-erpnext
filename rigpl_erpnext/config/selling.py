@@ -37,5 +37,16 @@ def get_data():
 					"doctype": "Item Price",
 				},
 			]
+		},
+		{
+			"label": _("Tools"),
+			"icon": "icon-wrench",
+			"items": [
+				{
+					"type": "doctype",
+					"name": "Sales Call",
+					"description":_("Enter your Sales Calls here"),
+				}
+			]
 		}
 	]
