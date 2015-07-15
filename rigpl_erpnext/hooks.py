@@ -69,10 +69,34 @@ doc_events = {
 		"autoname": "rigpl_erpnext.rigpl_erpnext.quality.autoname"
 	},
 	"Sales Invoice": {
-		"validate": "rigpl_erpnext.rigpl_erpnext.validations.sales_invoice.validate"
+		"validate": "rigpl_erpnext.rigpl_erpnext.validations.sales_invoice.validate",
+		"on_submit": "rigpl_erpnext.rigpl_erpnext.validations.sales_invoice.on_submit",
+		"on_cancel": "rigpl_erpnext.rigpl_erpnext.validations.sales_invoice.on_cancel"
 	},
 	"Sales Order": {
-		"validate": "rigpl_erpnext.rigpl_erpnext.validations.sales_order.validate"
+		"validate": "rigpl_erpnext.rigpl_erpnext.validations.sales_order.validate",
+		"on_submit": "rigpl_erpnext.rigpl_erpnext.validations.sales_order.on_submit",
+		"on_cancel": "rigpl_erpnext.rigpl_erpnext.validations.sales_order.on_cancel"
+	},
+	"Delivery Note": {
+		"on_submit": "rigpl_erpnext.rigpl_erpnext.validations.delivery_note.on_submit",
+		"on_cancel": "rigpl_erpnext.rigpl_erpnext.validations.delivery_note.on_cancel"
+	},
+	"Stock Entry": {
+		"validate": "rigpl_erpnext.rigpl_erpnext.validations.stock_entry.validate",
+		"on_submit": "rigpl_erpnext.rigpl_erpnext.validations.stock_entry.validate"
+	},
+	"Lead": {
+		"on_update": "rigpl_erpnext.rigpl_erpnext.validations.lead.on_update"
+	},
+	"Customer": {
+		"on_update": "rigpl_erpnext.rigpl_erpnext.validations.customer.on_update"
+	},
+	"Attendance": {
+		"validate": "rigpl_erpnext.rigpl_erpnext.validations.attendance.validate"
+	},
+	"Employee": {
+		"validate": "rigpl_erpnext.rigpl_erpnext.validations.employee.validate"
 	},
 }
 
